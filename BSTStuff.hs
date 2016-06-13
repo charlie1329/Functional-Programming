@@ -1,6 +1,6 @@
 data BT a = Empty | Fork a (BT a) (BT a) deriving(Show, Read, Eq, Ord)
 
---creating some auxillary functions to make life easier
+--creating some auxiliary functions to make life easier
 
 leaf :: a -> BT a
 leaf x = Fork x Empty Empty
